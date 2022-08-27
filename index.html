@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+    <title>One Pesa</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Latest compiled and minified CSS -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!--font awasome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+
+    <!--custom css-->
+    <link href="css/style.css" rel="stylesheet" />
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+    <script>
+        (function($) {
+            "use strict";
+            $(function() {
+                var header = $(".start-style");
+                $(window).scroll(function() {
+                    var scroll = $(window).scrollTop();
+
+                    if (scroll >= 10) {
+                        header.removeClass('start-style').addClass("scroll-on");
+                    } else {
+                        header.removeClass("scroll-on").addClass('start-style');
+                    }
+                });
+            });
+        })(jQuery);
+    </script>
+</head>
+
+<body>
+
+    <!-----------------------START navbar-------------------------->
+    <section class="site-header-full">
+        <div class="navigation-wrap start-header start-style">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-md navbar-light">
+
+                            <a class="navbar-brand" href="#" target="_blank"><img src="images/logo.png" class="img-fluid" alt="Logo"></a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContentArea" aria-controls="navbarContentArea" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarContentArea">
+                                <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" href="#" target="_blank">About</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" href="#">Product</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" href="#">Blog</a>
+                                        <!--                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>-->
+                                        <!--
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="service.html#email_marketing">E-mail Marketing</a>
+                                            <a class="dropdown-item" href="service.html#email_campaign_service">Email Campaign Service</a>
+                                            <a class="dropdown-item" href="service.html#online_marketing">Online Marketing</a>
+                                            <a class="dropdown-item" href="service.html#lead_management">Lead Management</a>
+                                            <a class="dropdown-item" href="service.html#display_marketing">Display Marketing</a>
+                                        </div>
+-->
+                                    </li>
+
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" href="#">Career</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                    <li class="pl-4 pl-md-0 ml-0 ml-md-3">
+                                        <a href="#"><button class="btn login-btn">Login</button></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------end navbar-------------------------->
+
+
+
+
+
+
+    <!-------------------start banner--------------------->
+    <section class="site-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <div class="lp-text">
+                        <img src="images/abstract-1.svg" class="img-fluid w-25 abstract1-banner">
+                        <span class="sh-head">Building </span>
+                        <h1 class="lp-text-title">Neo Banking for Bharat MSMEs</h1>
+
+                        <p class="lp-text-subtext">"OnePesa” is a Neo Banking solution for Bharat MSMEs to avail unique embedded financial services like savings, credit & government welfare schemes through a single channel
+                        </p>
+                        <button class="btn btn-primary">Get Started</button>
+                        <img src="images/abstract-2.png" class="img-fluid w-25 abstract2-banner">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="lp-mainImg">
+                        <img src="images/banner-bg1.png" class="img-fluid banner-mob-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------end banner--------------------->
+
+
+
+
+
+
+    <!-------------------START Providing Best Services----------------------->
+    <section class="providing-best-services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="heading">OnePesa Providing <span>Best Services</span>
+                    </h2>
+                    <p class="paragraph">At OnePesa, we aspire to provide easy & affordable financial products and services to our customers & cater to the ever growing under-served markets & geographies.
+                    </p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <div class="service-bx-wrap">
+                        <img src="images/online-banking.png" class="img-fluid">
+                        <h4>Financial Wellness Solution</h4>
+                        <p>OnePesa’s offers offers OnePesa offers PAN, ITR & GST enrolment as well as filling services at an affordable price.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-bx-wrap">
+                        <img src="images/government-building.png" class="img-fluid">
+                        <h4>Government Welfare Schemes</h4>
+                        <p>OnePesa facilitates & educate MSMEs to government welfare schemes through its partners.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-bx-wrap">
+                        <img src="images/bank.png" class="img-fluid">
+                        <h4>Banking </h4>
+                        <p> MSMEs can avail all type of assisted banking services like deposit & withdrawal through OnePesa merchant points.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-bx-wrap">
+                        <img src="images/piggy-bank.png" class="img-fluid">
+                        <h4>Savings </h4>
+                        <p>OnePesa savings is a long/medium & short term goal based savings solutions that is recommended to MSMEs and families who have the habit of periodic savings.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-bx-wrap">
+                        <img src="images/credit-card.png" class="img-fluid">
+                        <h4>Credit</h4>
+                        <p>OnePesa offers lending services to MSMES through its lending partner who uses AI and big data technology to help underwrite customer & offer customised lending solutions.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-bx-wrap">
+                        <img src="images/loan.png" class="img-fluid">
+                        <h4>Micro Pension</h4>
+                        <p>OnePesa has partnered with micro pension service provider to offer a unique pension product which helps Bharat MSMEs & families to save for old age while young. </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-bx-wrap">
+                        <img src="images/note.png" class="img-fluid">
+                        <h4>Access To Finance</h4>
+                        <p>OnePesa promotes economic growth and enhancing livelihoods through deepening financial inclusion & resilience for Bharat MSME target group. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------end Providing Best Services----------------------->
+
+
+
+
+
+
+    <!-------------------START ecosystem solution----------------------->
+    <section class="ecosystem-solution">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="sh-head">OnePesa for Business </span>
+                    <h2 class="heading">OnePesa for Business is a distribution ecosystem to support the Bharat MSMEs at the last mile through assisted B2B2C channel.
+                    </h2>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-------------------END ecosystem-solution----------------------->
+
+
+
+
+
+
+    <!-------------------START Product----------------------->
+    <section class="product-solution">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="sh-head">Protect your money </span>
+                    <h2 class="heading">Our bank has been providing services to its customers for almost 25 years.
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+
+                    <ul class="sm-wrapper">
+                        <li>
+                            <img src="images/icon1.svg">
+                            <span class="pt-msme">Savings</span>
+                        </li>
+                        <li>
+                            <img src="images/icon1.svg">
+                            <span class="pt-msme">Savings</span>
+                        </li>
+                        <li>
+                            <img src="images/icon1.svg">
+                            <span class="pt-msme">Savings</span>
+                        </li>
+                        <li>
+                            <img src="images/icon1.svg">
+                            <span class="pt-msme">Savings</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-------------------END Product----------------------->
+
+
+
+
+<!--------Our Blog Posts--------->
+
+    <section class="ourBlogPosts">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 col-lg-10 mx-auto text-center">
+                    <span class="sh-head"> Our Latest News </span>
+                    <h2 class="heading">Our Blog Posts </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="ourBlogPostsBox">
+                        <div class="ourBlogPostsImage">
+                            <img src="images/blog2.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="ourBlogPostsContents">
+                            <h3 >Successfull business tips and tricks way to grow</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,</p>
+                            <a href="#" class="btn btn-primary mt-4">Read Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="ourBlogPostsBox">
+                        <div class="ourBlogPostsImage">
+                            <img src="images/blog2.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="ourBlogPostsContents">
+                            <h3 >Successfull business tips and tricks way to grow</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,</p>
+                            <a href="#" class="btn btn-primary mt-4">Read Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="ourBlogPostsBox">
+                        <div class="ourBlogPostsImage">
+                            <img src="images/blog2.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="ourBlogPostsContents">
+                            <h3 >Successfull business tips and tricks way to grow</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,</p>
+                            <a href="#" class="btn btn-primary mt-4">Read Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!--------End Our Blog Posts--------->
+
+
+
+    <!-------------------start partner section-------------------->
+
+    <section class="partner-sec text-center">
+        <div class="container">
+            <span>Our Partners</span>
+            <h2 class="heading">Our Partner Programs</h2>
+            <p class="paragraph">We are proud to share our partnership and association with some of the below listed firms, that boosts our mission and vision in servicing our customers better.
+            </p>
+
+            <div class="partners-img d-flex justify-content-between mt-5">
+                <div><img src="images/Axis_Bank_logo_logotype.png" class="img-fluid w-50"></div>
+                <div><img src="images/Axis_Bank_logo_logotype.png" class="img-fluid w-50"></div>
+                <div><img src="images/Axis_Bank_logo_logotype.png" class="img-fluid w-50"></div>
+                <div><img src="images/Axis_Bank_logo_logotype.png" class="img-fluid w-50"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-------------------end partner section-------------------->
+
+
+
+
+
+
+
+
+
+
+    <!-------------------start footer section----------------------->
+    <section class="footer-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pr-md-5">
+                    <div class="w-50">
+                        <img src="images/logo.png" class="w-100">
+                    </div>
+                    <p>
+                        OnePesa is a one stop shop for digital payments in India which is safe, secure &amp; reliable and a very convenient tool for customers.
+                    </p>
+                    <ul class="social-links">
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Career</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Company Links</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Community</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Contact Us</h4>
+                    <p>Location: AE-552, AE Block, Salt Lake, Sector 1, Kolkata - 700 064</p>
+                    <p> Email: care@onepesa.com
+                        <br> Phone: 1800 890 6060
+                    </p>
+
+                </div>
+            </div>
+            <hr style="border-top: 1px solid #e7e7e7">
+            <div class="row">
+                <div class="col-12 footerText">
+                    <h6>Copyright &#169;2021 <strong class="text-black">Onepesa</strong></h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------end footer section----------------------->
+
+</body>
+
+</html>
